@@ -1,6 +1,6 @@
-#使用 PHP 和 AJAX 的留言板  
+# 使用 PHP 和 AJAX 的留言板  
 
-##後端  
+## 後端  
 **使用 PDO & prepare statement 存取 MySQL 資料庫**  
 ```
 $stmt = $conn->prepare("SELECT id, username, password FROM $users_table WHERE username = :username");
@@ -18,6 +18,6 @@ PDO (PHP Database Object) 支援包括 MySQL 在內的多種資料庫系統，�
 - 系統：ubuntu 16.04 / apache 2.4.18 / PHP 7.0 / MySQL 5.7  
 - 使用 scp 或是 sftp 的方式，將檔案上傳 aws 主機。  
 
-##前端  
+## 前端  
 - 前端使用 AJAX 與後端傳遞資訊，後端 PHP 在顯示留言時，有先用 `htmlspecialchars()` 處理，以避免 XSS 攻擊，而為了讓 AJAX 後續產生的網頁跟 PHP render 的網頁一致，前端 JavaScript 顯示新留言前也會通過 JavaScript 版本的 `htmlspecialchars()` 處理。  
 - css framework 使用 bootstrap。

@@ -1,4 +1,5 @@
-# 使用 PHP 和 AJAX 的留言板  
+# 使用 PHP 和 AJAX 的留言板  
+- 這是參與 Lidemy Mentor Program 時的作業，來源：https://github.com/Lidemy/mentor-program-kristxeng
 
 ## 後端  
 **使用 PDO & prepare statement 存取 MySQL 資料庫**  
